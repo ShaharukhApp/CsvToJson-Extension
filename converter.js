@@ -8,11 +8,11 @@ var pathofjson = path.join(__dirname,'myjsondata')
 var mydata = [];
 
 
-app.get('/',function(req,res){
+app.get('https://csvtojsonconverter.herokuapp.com/ ',function(req,res){
 
   res.sendFile(__dirname+'/pageview.html')
 })
-app.post('/csvtojson',function(req,res){
+app.post('https://csvtojsonconverter.herokuapp.com/csvtojson',function(req,res){
 
   
         fs.createReadStream(req.body.filename)
