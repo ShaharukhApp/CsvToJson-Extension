@@ -5,6 +5,8 @@ var express=require('express')
 var app=express();
 app.use(bodyParser.urlencoded({ extended: true })); 
 var pathofjson = path.join(__dirname,'myjsondata')
+const PORT = process.env.PORT || 5000
+
 var mydata = [];
 
 
@@ -29,5 +31,4 @@ app.post('https://csvtojsonconverter.herokuapp.com/csvtojson',function(req,res){
      
 })
  
- 
-app.listen(8080);
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
