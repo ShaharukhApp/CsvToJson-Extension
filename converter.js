@@ -24,11 +24,7 @@ app.post('https://csvtojsonconverter.herokuapp.com/csvtojson',function(req,res){
         })
         .on('end', () => {
           res.json(mydata);
-          fs.writeFileSync(pathofjson,JSON.stringify(mydata), function(err){
-               
-            console.log(err);
-              
-          })
+          
         });
      
 })
