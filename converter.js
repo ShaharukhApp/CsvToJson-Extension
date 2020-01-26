@@ -8,7 +8,7 @@ var pathofjson = path.join(__dirname,'myjsondata')
 var mydata = [];
 
 
-app.get('https://csvtojsonconverter.herokuapp.com/ ',function(req,res){
+app.get('/https://csvtojsonconverter.herokuapp.com/ ',function(req,res){
 
   res.sendFile(__dirname+'/pageview.html')
 })
