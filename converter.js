@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000
 var mydata = [];
 
 
-app.get('/https://csvtojsonconverter.herokuapp.com/ ',function(req,res){
+app.get('https://csvtojsonconverter.herokuapp.com/ ',function(req,res){
 
   res.sendFile(__dirname+'/pageview.html')
 })
